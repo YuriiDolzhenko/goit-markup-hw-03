@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/normalize.css" />
-    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 <body class="body">
     <header class="">
         <nav class="main-nav">
             <!-- Логотип -->
-            <a href="../index.html">
+            <a class="logo-link" href="../index.html">
                 <p class="logo-text"><span class="logo">Web</span>Studio</p>
             </a>
             <!-- Навигация на другие страницы -->
@@ -28,21 +31,17 @@
             <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
-    <main>
-        <div class="main-portfolio">
-      <section class="benefits">
+    <main class="main-portfolio">  
         <h2>Фильтр выбора проекта</h2>
-        <ul>
+        <ul class="benefits">
             <li><button class="benefits-button" type="button">Все</button></li>
             <li><button class="benefits-button" type="button">Веб-сайты</button></li>
             <li><button class="benefits-button" type="button">Приложения</button></li>
             <li><button class="benefits-button" type="button">Дизайн</button></li>
             <li><button class="benefits-button" type="button">Маркетинг</button></li>
         </ul>
-      </section>
-      <section class="projects">
         <h2>Наши проекты</h2>
-        <ul>
+        <ul class="projects">
             <li><a href="">
                 <img src="../Images/Tekhnokryak.jpg" alt="Технокряк" width="370">
                 <h3>Технокряк</h3>
@@ -106,9 +105,7 @@
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> -->
                 </a>
             </li>
-        </ul>
-      </section>
-      </div>
+        </ul>     
     </main>
     <footer class="footer">
         <!-- Логотип -->
