@@ -11,7 +11,18 @@
   --akcent-color: #2196f3;
   --logo-color: #000000;
 }
+/* значение border-box устанавливается для всех элементов 
+и псевдоэлементов документа. */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
+/* Остальной код */
 .body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.02em;
@@ -21,6 +32,7 @@
 }
 * {
   padding: 0;
+  outline: 2px solid tomato;
 }
 ul {
   list-style: none;
