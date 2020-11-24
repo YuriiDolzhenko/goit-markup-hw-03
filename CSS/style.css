@@ -13,14 +13,6 @@
 }
 /* значение border-box устанавливается для всех элементов 
 и псевдоэлементов документа. */
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 
 /* Остальной код */
 .body {
@@ -32,10 +24,13 @@ html {
 }
 * {
   padding: 0;
+  margin: 0;
   outline: 2px solid tomato;
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -46,6 +41,8 @@ h2 {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0;
 }
 h3 {
   color: var(--secondary-text-color);
@@ -53,6 +50,14 @@ h3 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding: 0 15px;
 }
 /* Логотип */
 .logo-link {
@@ -100,7 +105,7 @@ h3 {
 /* Секция Герой */
 .hero {
   background-color: #2f303a; /*Временный цвет */
-  height: 600px;
+  /* height: 600px; */
   color: var(--primary-background-color);
   text-align: center;
 }
@@ -111,6 +116,7 @@ h3 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 .button {
   color: var(--primary-background-color);
@@ -120,15 +126,17 @@ h3 {
   line-height: 1.87;
   /* display: flex; */
   align-items: center;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.06em;
-  height: 20px;
-  width: 200px;
-  border-radius: 3px;
+  display: inline-block;
+  padding: 10px 32px;
+  height: 50px;
+  min-width: 200px;
+  border-radius: 4px;
 }
 
 .section-desc {
-  height: 101px;
+  margin-bottom: 94px;
 }
 .section-desc li {
   font-weight: 500;
@@ -136,18 +144,25 @@ h3 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
-  float: left;
   width: 270px;
 }
+.desc-text {
+  margin-bottom: 10px;
+}
 .section-img {
-  height: 386px;
+  margin-bottom: 94px;
+}
+.img-text {
+  margin-bottom: 50px;
 }
 .section-img li {
-  float: left;
 }
 .section-foto {
   background-color: var(--secondary-background-color);
-  height: 648px;
+  text-align: center;
+}
+.foto-link {
+  margin-bottom: 50px;
 }
 .section-foto li {
   font-weight: 500;
@@ -155,7 +170,6 @@ h3 {
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.03em;
-  float: left;
   background-color: var(--primary-background-color);
 }
 .footer {
@@ -186,19 +200,23 @@ h3 {
 
 /* Portfolio */
 .main-portfolio {
-  height: 1360px;
+  /* height: 1360px; */
 }
 .benefits .benefits-button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
-  height: 38px;
   background-color: var(--secondary-background-color);
   color: var(--secondary-text-color);
-  float: left;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 32px;
+  height: 38px;
+  min-width: 73px;
+  border-radius: 4px;
 }
 .benefits .benefits-button:hover,
 .benefits .benefits-button:focus {
@@ -214,7 +232,6 @@ h3 {
 .projects li {
   text-align: left;
   border: 1px solid #eeeeee;
-  float: left;
 }
 .projects p {
   color: var(--primary-text-color);
