@@ -60,10 +60,17 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px;
 }
 /* Логотип */
+.main-nav {
+  display: flex;
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .logo-link {
   font-family: 'Raleway', sans-serif;
   color: var(--logo-color);
@@ -79,6 +86,9 @@ p {
   color: var(--logo-color);
 } */
 /* ссылки навигации */
+.nav-link {
+  display: flex;
+}
 .nav-link .active {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -92,10 +102,16 @@ p {
 .nav-link .active.current {
   color: var(--akcent-color);
 }
+.nav-li:not(:last-child) {
+  margin-right: 30px;
+}
 /* .nav-link .active:active {
   color:#ff0000;
 } */
 /* ссылки контактов */
+.header-li {
+  display: flex;
+}
 .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -143,12 +159,23 @@ p {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.desc {
+  display: flex;
+}
+.desc .center {
+  justify-content: center;
+}
+
+.desc-li:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section-desc li {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: center;
   width: 270px;
 }
 .desc-text {
@@ -157,6 +184,15 @@ p {
 .section-img {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.img-link {
+  display: flex;
+}
+.img-li:not(:first-child) {
+  margin-left: 30px;
+}
+.img-link img {
+  display: block;
 }
 .img-text {
   margin-bottom: 50px;
@@ -180,6 +216,15 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--primary-background-color);
+}
+.foto-list {
+  display: flex;
+}
+.foto-img {
+  justify-content: center;
+}
+.foto-img:not(:last-child) {
+  margin-right: 30px;
 }
 .foto-img img {
   margin-bottom: 30px;
@@ -222,9 +267,18 @@ p {
 .main-portfolio {
   text-align: center;
 }
+.benefits {
+  display: flex;
+}
+.benefits.center {
+  justify-content: center;
+}
 .container.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.benefits-list:not(:last-child) {
+  margin-right: 8px;
 }
 .benefits .benefits-button {
   font-family: inherit;
@@ -265,6 +319,9 @@ p {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+.projects img {
+  display: block;
 }
 
 /* line-height: 1.2; */
