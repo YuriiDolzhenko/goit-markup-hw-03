@@ -141,7 +141,7 @@ p {
 /* Секция Герой */
 .section-hero {
   background-color: #2f303a; /*Временный цвет */
-  /* height: 600px; */
+  height: 600px;
   color: var(--primary-background-color);
   text-align: center;
 }
@@ -152,6 +152,7 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-top: 200px;
   margin-bottom: 30px;
 }
 .button {
