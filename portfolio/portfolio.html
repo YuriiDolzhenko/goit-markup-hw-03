@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body class="body">
-    <header class="header">
+    <header class="header-portfolio">
         <div class="container main">
             <nav class="main-nav">
                 <!-- Логотип -->
@@ -36,8 +36,9 @@
         </div>
     </header>
     <main class="main-portfolio">  
+        <section>
         <div class="container portfolio">
-        <h2>Фильтр выбора проекта</h2>
+        <h2 class="title visually-hidden">Фильтр выбора проекта</h2>
         <ul class="benefits center">
             <li class="benefits-list"><button class="benefits-button" type="button">Все</button></li>
             <li class="benefits-list"><button class="benefits-button" type="button">Веб-сайты</button></li>
@@ -45,85 +46,108 @@
             <li class="benefits-list"><button class="benefits-button" type="button">Дизайн</button></li>
             <li class="benefits-list"><button class="benefits-button" type="button">Маркетинг</button></li>
         </ul>
-        <h2>Наши проекты</h2>
+        <h2 class="title visually-hidden">Наши проекты</h2>
         <ul class="projects">
-            <li class="projects-item"><a href="">
+            <li class="projects-item">
+                <a href="">
                 <img src="../images/Tekhnokryak.jpg" alt="Технокряк" width="370">
+                <div class="projects-text">
                 <h3>Технокряк</h3>
                 <p>Веб-сайт</p>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                 </a>
-            </li>
+                </div>
+             </a>
+                
+              </li>
             <li class="projects-item"><a href="">
                 <img src="../images/novsgs.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                <div class="projects-text">
                 <h3>Постер New Orlean vs Golden Star</h3>
                 <p>Дизайн</p>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                </a>
+                </div>
+            </a>
             </li>
             <li class="projects-item"><a href="">
                 <img src="../images/seafood.jpg" alt="Ресторан Seafood" width="370">
+                <div class="projects-text">
                 <h3>Ресторан Seafood</h3>
                 <p>Приложение</p>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                </a>
+            </div>
+            </a>
             </li>
             <li class="projects-item"><a href="">
                 <img src="../images/prime.jpg" alt="Проект Prime" width="370">
+                <div class="projects-text">
                 <h3>Проект Prime</h3>
                 <p>Маркетинг</p>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                </a>
+            </div>
+            </a>
             </li>
             <li class="projects-item"><a href="">
                 <img src="../images/boxes.jpg" alt="Проект Boxes" width="370">
+                <div class="projects-text">
                 <h3>Проект Boxes</h3>
                 <p>Приложение</p>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                </a>
+            </div>
+            </a>
             </li>
             <li class="projects-item"><a href="">
                 <img src="../images/Inspiration_has_no_Borders.jpg" alt="Inspiration has no Borders" width="370">
+                <div class="projects-text">
                 <h3 lang="en">Inspiration has no Borders</h3>
                 <p>Веб-сайт</p>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                </a>
+            </div>
+            </a>
             </li>
             <li class="projects-item"><a href="">
                 <img src="../images/le.jpg" alt="Издание Limited Edition" width="370">
+                <div class="projects-text">
                 <h3>Издание Limited Edition</h3>
                 <p>Дизайн</p>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                </a>
+            </div>
+            </a>
             </li>
             <li class="projects-item"><a href="">
                 <img src="../images/lab.jpg" alt="Проект LAB" width="370">
+                <div class="projects-text">
                 <h3>Проект LAB</h3>
                 <p>Маркетинг</p>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
-                </a>
+            </div>
+            </a>
             </li>
             <li class="projects-item"><a href="">
                 <img src="../images/Growing_Business.jpg" alt="Growing Business" width="370">
+                <div class="projects-text">
                 <h3>Growing Business</h3>
                 <p>Приложение</p>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> -->
-                </a>
+            </div>
+            </a>
             </li>
         </ul>   
         </div>  
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
             <!-- Логотип -->
-            <a href="./index.html">
+            <a href="../index.html">
                 <p class="footer-logo"><span class="logo">Web</span>Studio</p>
             </a>
             <address id="address">
                 <!-- Ссылка на адрес -->
-                <p class="address">г. Киев, пр-т Леси Украинки, д.26 </p><br />
+                <a class="google-address link" target="_blank" href="https://goo.gl/maps/JPTJLpiqcLhhmCbZ7">
+                    г. Киев, пр-т Леси Украинки, 26
+                </a>
                 <!-- Ссылка на адрес электронной почты  -->
-                <a class="footer-link" href="mailto:info@example.com">info@example.com</a><br />
+                <a class="footer-link" href="mailto:info@example.com">info@example.com</a>
                 <!-- Ссылка на телефонный номер -->
                 <a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
             </address>
