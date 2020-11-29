@@ -13,6 +13,7 @@
   --akcent-color: #2196f3;
   --logo-color: #000000;
   --border-color: #ececec;
+  --footer-color: #2f303a;
 }
 /* значение border-box устанавливается для всех элементов 
 и псевдоэлементов документа. */
@@ -114,7 +115,7 @@ p {
   color: var(--akcent-color);
 }
 .nav-li:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 /* .nav-link .active:active {
   color:#ff0000;
@@ -202,8 +203,11 @@ p {
 .section-desc h2 {
   text-align: center;
 }
+.desc-text {
+  text-transform: uppercase;
+}
 .section-desc li {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -214,7 +218,7 @@ p {
   margin-bottom: 10px;
 }
 .section-img {
-  padding-top: 94px;
+  /* padding-top: 94px; */
   padding-bottom: 94px;
   text-align: center;
 }
@@ -242,7 +246,7 @@ p {
 .foto-link {
   margin-bottom: 50px;
 }
-.section-foto li {
+.section-foto h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
@@ -250,11 +254,23 @@ p {
   letter-spacing: 0.03em;
   background-color: var(--primary-background-color);
 }
+.section-foto p {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 .foto-list {
   display: flex;
 }
 .foto-img {
   justify-content: center;
+  background: var(--primary-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .foto-img:not(:last-child) {
   margin-right: 30px;
@@ -266,7 +282,7 @@ p {
   margin-bottom: 10px;
 }
 .footer {
-  background-color: var(--logo-color);
+  background-color: var(--footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -284,6 +300,7 @@ p {
 }
 .google-address {
   color: var(--primary-background-color);
+  font-style: normal;
 }
 .footer-link:not(:first-child) {
   margin-top: 9px;
@@ -336,6 +353,7 @@ p {
   display: inline-block;
   padding: 6px 21px;
   border-radius: 4px;
+  border: 0px;
 }
 .benefits .benefits-button:hover,
 .benefits .benefits-button:focus {
@@ -345,15 +363,19 @@ p {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  /* margin-left: -30px;
-  margin-top: -30px; */
+  /* margin-right: -30px;
+  margin-bottom: -30px; */
   list-style: none;
 }
 .projects-item {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  /* flex-basis: calc(100% / 3 - 30px); */
   border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   /* margin-top: 30px; */
   /* flex-basis: calc(100% - 60px / 3); */
 }
